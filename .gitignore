@@ -1,0 +1,6 @@
+.DS_Store
+build
+.dart_tool
+/.idea
+/ios/Flutter/App.framework/flutter_assets/
+/android/.gradle
