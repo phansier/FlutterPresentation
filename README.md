@@ -6,7 +6,7 @@ A demo presentation project for Flutter prototypes presentation on [404Fest-2019
 
 This project can be assembled for:
 - Android, iOS
-- Web - see how ot works: https://beryukhov.ru/FlutterPresentation/
+- Web - see how it works: https://beryukhov.ru/FlutterPresentation/
 - MacOs (Used in presentation)
 - Linux, Windows
 
