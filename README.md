@@ -10,7 +10,7 @@ A demo presentation project for Flutter prototypes presentation on [404Fest-2019
 
 This project can be assembled for:
 - Android, iOS
-- Web
+- Web - see how it works: https://phansier.github.io/FlutterPresentation/
 - MacOs (Used in presentation)
 - Linux, Windows
 
