@@ -1,5 +1,4 @@
-
-[![Flutter Version](https://img.shields.io/badge/Flutter-1.9.8-9cf)](https://flutter.dev/)
+[![Flutter Version](https://img.shields.io/badge/Flutter-3.0.5-9cf)](https://flutter.dev/)
 
 # FlutterPresentation
 A demo presentation project for Flutter prototypes presentation on [404Fest-2019](https://2019.404fest.ru/program/reports/mobile-applications/)

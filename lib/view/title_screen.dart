@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:example_flutter/navigation.dart';
+import 'package:flutter_presentation/navigation.dart';
 
 class TitleScreen extends StatelessWidget {
+  const TitleScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -34,7 +36,7 @@ class TitleScreen extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(x * 32.0),
               child: Image.asset(
-                'images/Kaspersky.png',
+                'assets/images/Kaspersky.png',
                 width: width * 0.3,
                 fit: BoxFit.fitWidth,
               ),
