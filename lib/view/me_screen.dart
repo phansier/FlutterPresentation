@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:example_flutter/navigation.dart';
+import 'package:flutter_presentation/navigation.dart';
 
 class MeScreen extends StatelessWidget {
+  const MeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -11,11 +13,11 @@ class MeScreen extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_back),
-            title: Text('Back'),
+            label: 'Back',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_forward),
-            title: Text('Next'),
+            label: 'Next',
           ),
         ],
         onTap: (index) {
@@ -37,7 +39,7 @@ class MeScreen extends StatelessWidget {
             Container(
               constraints: BoxConstraints(maxWidth: width / 3),
               child: Image.asset(
-                'images/Beryukhov.png',
+                'assets/images/Beryukhov.png',
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -55,11 +57,11 @@ class MeScreen extends StatelessWidget {
               'Обо мне',
               style: TextStyle(fontSize: x * 64),
             )),
-        _row(AssetImage('images/KISA.png'),
+        _row(const AssetImage('assets/images/KISA.png'),
             'Разработчик Kaspersky Internet Security for Android', width, x),
-        _row(AssetImage('images/HSE.png'), 'Студент магистратуры ФКН ВШЭ',
+        _row(const AssetImage('assets/images/HSE.png'), 'Студент магистратуры ФКН ВШЭ',
             width, x),
-        _row(AssetImage('images/QC.png'), 'Ранее разработчик в стартапе', width,
+        _row(const AssetImage('assets/images/QC.png'), 'Ранее разработчик в стартапе', width,
             x),
       ]),
     );

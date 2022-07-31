@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:example_flutter/navigation.dart';
+import 'package:flutter_presentation/navigation.dart';
 
 class OutScreen extends StatelessWidget {
+  const OutScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -11,14 +13,14 @@ class OutScreen extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_back),
-            title: Text('Back'),
+            label: 'Back',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.arrow_back,
               color: Colors.transparent,
             ),
-            title: Text(''),
+            label: '',
           ),
         ],
         onTap: (int index) {
@@ -46,7 +48,7 @@ class OutScreen extends StatelessWidget {
                   Flexible(
                       child: Text(
                     'https://github.com/AndreySBer/FlutterPresentation',
-                    style: new TextStyle(
+                    style: TextStyle(
                         fontSize: x * 32,
                         color: Colors.blue,
                         decoration: TextDecoration.underline),
@@ -54,9 +56,9 @@ class OutScreen extends StatelessWidget {
                 ])),
             Center(
                 child: Padding(
-              padding: EdgeInsets.all(32.0),
+              padding: const EdgeInsets.all(32.0),
               child: Image.asset(
-                'images/QR.png',
+                'assets/images/QR.png',
                 width: width * 0.25,
                 fit: BoxFit.fitWidth,
               ),
