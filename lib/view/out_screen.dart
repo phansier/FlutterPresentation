@@ -11,14 +11,14 @@ class OutScreen extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_back),
-            title: Text('Back'),
+            label: 'Back',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.arrow_back,
               color: Colors.transparent,
             ),
-            title: Text(''),
+            label: '',
           ),
         ],
         onTap: (int index) {

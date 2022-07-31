@@ -15,11 +15,11 @@ class TitleScreen extends StatelessWidget {
               Icons.arrow_back,
               color: Colors.transparent,
             ),
-            title: Text(''),
+            label: '',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_forward),
-            title: Text('Next'),
+            label: 'Next',
           ),
         ],
         onTap: (int index) {

@@ -11,11 +11,11 @@ class MeScreen extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_back),
-            title: Text('Back'),
+            label: 'Back',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.arrow_forward),
-            title: Text('Next'),
+            label: 'Next',
           ),
         ],
         onTap: (index) {
